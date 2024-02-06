@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'DisplayFont';
+    src: url(../fonts/display/CalculatorLcdsRegular-R5ZM.ttf);
+}
+
+
+
+body {
+    background-color: rgb(223, 205, 205);
+}
+
+h1 {
+    font-family: 'Righteous', sans-serif;
+
+}
+
+
+#my_machine {
+    position: relative;
+    z-index: 3;
+    width: 400px;
+    border: 8px outset rgb(34, 47, 113);
+    box-shadow: 3px 4px 3px 4px;
+    background: rgb(11, 0, 210);
+    background: linear-gradient(90deg, rgb(47, 44, 42) 0%, rgb(96, 82, 75) 35%, rgb(84, 73, 72) 100%);
+}
+
+.my_logo {
+    height: 100px;
+}
+
+#user-choice {
+    height: 100px;
+}
+
+.foot {
+    width: 350px;
+    height: 25px;
+    background-color: rgb(33, 30, 30);
+    box-shadow: 1px 1px 1px 4px;
+    border-radius: 2px;
+    transform: translateY(-10px);
+    z-index: 0;
+    position: relative;
+}
+
+.white_line {
+    height: 10px;
+
+}
+
+.snack_exit {
+    border: 1px solid rgb(27, 22, 22);
+    border-radius: 1px;
+}
+
+input {
+    background-color: greenyellow;
+    color: rgb(41, 37, 37);
+    font-family: 'DisplayFont';
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#snack_output {
+    background-color: rgb(35, 32, 32);
+}
+
+.my_snacks {
+    box-shadow: inset 2px 3px 4px 1px white;
+    padding: 3px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#selection {
+    border: 50px inset solid black;
+}
+
+#window img {
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: inset 3px 3px 4px 1px black;
+}
+
+#my_machine.graphite {
+    background: #282828;
+    background-image: -webkit-linear-gradient(right, #0f2183 2%, #26272a 100%), -webkit-radial-gradient(50% 116%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), -webkit-linear-gradient(149deg, rgba(255, 255, 255, 0.5) 7%, rgba(87, 87, 87, 0.5) 68%, rgba(20, 20, 21, 0.5) 76%, rgba(0, 0, 0, 0.5) 100%);
+    background-image: linear-gradient(-90deg, #2a16ae 2%, #737fbc 100%), radial-gradient(50% 116%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), linear-gradient(-59deg, rgba(255, 255, 255, 0.5) 7%, rgba(87, 87, 87, 0.5) 68%, rgba(85, 85, 85, 0.5) 76%, rgba(0, 0, 0, 0.5) 100%);
+    background-blend-mode: normal, multiply, multiply;
+}

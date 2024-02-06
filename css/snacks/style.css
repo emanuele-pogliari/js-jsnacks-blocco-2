@@ -1,0 +1,129 @@
+body {
+    background-color: rgb(223, 205, 205);
+}
+
+@font-face {
+    font-family: 'Calculator';
+    src: url(../../fonts/display/Calculator.ttf);
+}
+
+h1 {
+    font-family: 'Calculator', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.calculator {
+    background-color: black;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: solid 1px #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#result {
+    word-wrap: break-word;
+    background-color: yellowgreen;
+    width: 100%;
+    height: 20vh;
+    overflow: auto;
+    padding: 15px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Calculator';
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.clear {
+    background-color: #ff4136;
+    color: #fff;
+}
+
+.back {
+    background-color: hsl(334, 100%, 47%);
+    color: #fff;
+}
+
+.back a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.number,
+.decimal {
+    background-color: #fff;
+    color: #333;
+
+}
+
+.operator {
+    background-color: #0074d9;
+    color: #fff;
+}
+
+.equals {
+    background-color: #8a8d8b;
+    grid-row: span 3;
+    color: #fff;
+}
+
+.my_guide {
+    margin: auto;
+    position: relative;
+    left: 50px;
+    max-width: 400px;
+    animation: guideAnim 2.0s infinite;
+}
+
+.guide_text {
+    font-family: 'Calculator', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    margin-right: 30px;
+}
+
+
+@keyframes guideAnim {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    40% {
+        transform: translateY(15px);
+    }
+
+    60% {
+        transform: translateY(30px);
+    }
+}
