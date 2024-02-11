@@ -4,7 +4,7 @@ body {
 
 @font-face {
     font-family: 'Calculator';
-    src: url(../../fonts/display/Calculator.ttf);
+    src: url(../../fonts/Calculator.ttf)
 }
 
 h1 {
